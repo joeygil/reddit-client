@@ -61,6 +61,6 @@ input[type="text"]:hover {
     flex-direction: column;
   }
   #post {
-    width: 460px;
+    width: 380px;
   }
 }
