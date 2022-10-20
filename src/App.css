@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .display {
@@ -12,7 +13,8 @@ body {
 .display,
 img {
   width: 400px;
-  margin: 5px;
+  margin: 15px;
+  border-radius: 10px;
 }
 
 #subreddit {
@@ -20,13 +22,34 @@ img {
 }
 
 #post {
-  border: 1px black solid;
   margin: 20px;
   padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease-out;
 }
 
 #image {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#post:hover {
+  background-color: #bdbfbf40;
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+input[type="text"] {
+  border: 1px solid grey;
+}
+
+input[type="text"]:hover {
+  border: 1px solid black;
+}
+
+#author {
+  font-size: x-small;
+  margin-bottom: 3px;
 }
