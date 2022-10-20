@@ -5,6 +5,7 @@ body {
 }
 
 .display {
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,5 +59,8 @@ input[type="text"]:hover {
   #searchbar {
     display: flex;
     flex-direction: column;
+  }
+  #post {
+    width: 460px;
   }
 }
