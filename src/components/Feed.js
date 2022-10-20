@@ -30,7 +30,10 @@ const Feed = () => {
 
   return (
     <>
-      <div className="m-auto d-flex align-items-center justify-content-center  m-5">
+      <div
+        id="searchbar"
+        className="m-auto d-flex align-items-center justify-content-center  m-1"
+      >
         <input
           className="h5 text-dark m-1"
           type="text"
@@ -41,7 +44,7 @@ const Feed = () => {
         <input
           type="submit"
           value="SEARCH"
-          className="m-3 btn btn-dark"
+          className="m-1 btn btn-dark"
           onClick={getData}
         />
         <div id="top-posts">
